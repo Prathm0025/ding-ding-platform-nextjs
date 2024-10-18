@@ -1,11 +1,12 @@
-import Game from "@/components/Game";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { fetchGames } from "@/utils/action";
 import Image from "next/image";
 
-const Home = async () => {
-  const initialGames = await fetchGames();
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <main className="relative w-full h-full">
       <Image
@@ -18,10 +19,9 @@ const Home = async () => {
         className="z-[-2] object-cover"
       />
       <Header />
-      <Game />
-      <Footer />
+      {children}
+      <Footer/>
     </main>
   );
-};
+}
 
-export default Home;
