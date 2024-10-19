@@ -33,27 +33,27 @@ const page = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (data.name === "" || data.password === "") {
-      return console.log("Both email and password are required");
+      return alert("Both email and password are required");
     }
     if (data.password.length < 6) {
-      return console.log("Minimun length for password is 6");
+      return alert("Minimun length for password is 6");
     }
     const response = await login(data);
     if (response?.error) {
-      return console.log(response?.error || "Login failed");
+      return alert(response?.error || "Login failed");
     }
     const token = response?.token;
     if (token) {
       const decodedToken = jwtDecode<DecodedToken>(token);
       if (decodedToken?.role === "player") {
-        console.log("Login successfull!!");
+        alert("Login successfull!!");
         Cookies.set("token", token);
         router.push("/");
       } else {
-        return console.log("Access denied!");
+        return alert("Access denied!");
       }
     } else {
-      return console.log("Token not found");
+      return alert("Token not found");
     }
   };
 
@@ -61,13 +61,13 @@ const page = () => {
     <div className="h-full w-full relative">
       <div
         style={{ backgroundImage: 'url("/login/bg-login.png")' }}
-        className="bg-no-repeat bg-cover bg-center w-full h-full flex justify-between overflow-hidden"
+        className="bg-no-repeat bg-cover w-full h-full flex justify-between overflow-hidden"
       >
-        <div className="flex-1 flex flex-col gap-[6vw] items-center justify-start py-[3vw]">
-          <Logo className="h-[15vw] w-[25vw]" />
+        <div className="flex-1 flex flex-col gap-3vw items-center justify-start sm:justify-center py-3vw">
+          <Logo className="h-15vw w-25vw" />
           <form
             onSubmit={handleSubmit}
-            className="flex flex-col gap-[1.5vw] w-[90%] lg:w-[55%] items-center"
+            className="flex flex-col gap-1-5vw w-[85%] lg:w-[55%] items-center"
           >
             <Input
               name="name"
@@ -75,7 +75,7 @@ const page = () => {
               onChange={handleChange}
               type="text"
               placeholder="Enter Name"
-              icon={<Name className="h-full w-auto" />}
+              icon={<Name className="h-[85%] w-[85%]" />}
             />
             <Input
               name="password"
@@ -83,9 +83,9 @@ const page = () => {
               onChange={handleChange}
               type="password"
               placeholder="Enter Password"
-              icon={<Password className="h-full w-auto" />}
+              icon={<Password className="h-[85%] w-[85%]" />}
             />
-            <button type="submit" className="mt-[2vw] w-[50%] min-w-fit">
+            <button type="submit" className="mt-2vw w-[30%] md:w-[50%] min-w-fit z-[100]">
               <Button className="uppercase" text="Login" />
             </button>
           </form>
@@ -97,6 +97,7 @@ const page = () => {
             quality={100}
             width={800}
             height={1000}
+            priority
           />
         </div>
       </div>

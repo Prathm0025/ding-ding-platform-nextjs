@@ -8,7 +8,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <main className="relative w-full h-full">
+    <main className="relative w-full h-full flex flex-col justify-center items-center">
       <Image
         src="/home/bg.png"
         fill
@@ -20,8 +20,7 @@ export default function RootLayout({
       />
       <Header />
       {children}
-      <Footer/>
+      <Footer />
     </main>
   );
 }
-

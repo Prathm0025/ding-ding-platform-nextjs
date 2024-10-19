@@ -6,10 +6,8 @@ export default function middleware(request: NextRequest) {
   const isPublicPath = path === "/login";
   const token = request.cookies.get("token");
 
-  if ((isPublicPath || path === "/login") && token) {
-    const response = NextResponse.redirect(
-      new URL("/", request.url)
-    );
+  if ((isPublicPath || path === "/login" || path === "/game") && token) {
+    const response = NextResponse.redirect(new URL("/", request.url));
     return response;
   }
 

@@ -12,13 +12,13 @@ const Name = ({ className }: any) => {
     >
       <g filter="url(#filter0_f_1_244)">
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M10.882 4H67.0248C67.4533 4 67.8007 4.34737 67.8007 4.77588V6.49062H69.1197V6.00189C69.1197 4.90013 69.9189 4.00787 70.8965 4.00787H71.8508C72.8362 4.00787 73.6276 4.90013 73.6276 6.00189V6.16482L73.6276 11.4873C73.6276 12.5891 72.8285 13.4813 71.8509 13.4813H70.8965C70.2991 13.4813 69.7715 13.1477 69.4534 12.6356L69.4456 12.6357C69.2561 12.3296 69.1351 11.962 69.1211 11.5649H67.8007V14.4822C67.8007 14.9107 67.4533 15.258 67.0248 15.258H63.3317V16.9166L63.3394 16.9185V18.4702V65.8534L38.356 61.0041L13.3727 65.8534V17.3219V15.7702V15.258H10.882C10.4535 15.258 10.1061 14.9107 10.1061 14.4822V11.5649H8.49884C8.4624 12.6307 7.67797 13.4813 6.7234 13.4813H5.76906C5.17164 13.4813 4.64404 13.1477 4.32593 12.6356H4.31817C4.99586 12.3127 5.61223 11.8685 6.15184 11.3299C5.61407 11.865 5.00034 12.3066 4.32587 12.628C4.12414 12.3021 4 11.9064 4 11.4797V5.99418C4 4.89243 4.7914 4.00016 5.77677 4.00792H6.7311C7.71647 4.00792 8.50787 4.90018 8.50787 6.00194V6.15711C8.50541 6.18297 8.50284 6.20879 8.50017 6.23459V6.49062H10.1061V4.77588C10.1061 4.34738 10.4535 4 10.882 4Z"
           fill="#FFF717"
         />
       </g>
-      <g clip-path="url(#clip0_1_244)">
+      <g clipPath="url(#clip0_1_244)">
         <path
           d="M71.7499 6.4906H8.02673V11.5649H71.7499V6.4906Z"
           fill="#E7995B"
@@ -27,7 +27,7 @@ const Name = ({ className }: any) => {
           d="M38.8023 60.6233L38.7284 60.6089L38.6545 60.6233L14.1329 65.3829V16.1838C20.4088 16.5697 26.83 16.2475 33.2395 15.926C35.1175 15.8317 36.9944 15.7376 38.8664 15.6613C47.1812 15.3224 55.4167 15.3341 63.3238 17.2238V65.3829L38.8023 60.6233Z"
           fill="url(#paint0_linear_1_244)"
           stroke="#EBC356"
-          stroke-width="0.775881"
+          strokeWidth="0.775881"
         />
         <path
           d="M63.704 18.4701V9.63281H13.745V17.3218C30.1782 18.4158 47.6045 14.5209 63.7118 18.4701H63.704Z"
@@ -70,9 +70,9 @@ const Name = ({ className }: any) => {
           width="75.8347"
           height="68.0604"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -92,8 +92,8 @@ const Name = ({ className }: any) => {
           y2="60.3058"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#340000" />
-          <stop offset="1" stop-color="#C00000" />
+          <stop stopColor="#340000" />
+          <stop offset="1" stopColor="#C00000" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_1_244"
@@ -103,8 +103,8 @@ const Name = ({ className }: any) => {
           y2="37.7507"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.415278" stop-color="#770002" />
-          <stop offset="1" stop-color="#F51E21" />
+          <stop offset="0.415278" stopColor="#770002" />
+          <stop offset="1" stopColor="#F51E21" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_1_244"
@@ -114,8 +114,8 @@ const Name = ({ className }: any) => {
           y2="26.5324"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C8080C" />
-          <stop offset="1" stop-color="#820000" />
+          <stop stopColor="#C8080C" />
+          <stop offset="1" stopColor="#820000" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_1_244"
@@ -125,8 +125,8 @@ const Name = ({ className }: any) => {
           y2="8.314"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#ED9B5A" />
-          <stop offset="1" stop-color="#F1CE5B" />
+          <stop stopColor="#ED9B5A" />
+          <stop offset="1" stopColor="#F1CE5B" />
         </linearGradient>
         <linearGradient
           id="paint4_linear_1_244"
@@ -136,8 +136,8 @@ const Name = ({ className }: any) => {
           y2="15.4442"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFA761" />
-          <stop offset="1" stop-color="#C45F33" />
+          <stop stopColor="#FFA761" />
+          <stop offset="1" stopColor="#C45F33" />
         </linearGradient>
         <linearGradient
           id="paint5_linear_1_244"
@@ -147,8 +147,8 @@ const Name = ({ className }: any) => {
           y2="4.00005"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#ED9B5A" />
-          <stop offset="1" stop-color="#F1CE5B" />
+          <stop stopColor="#ED9B5A" />
+          <stop offset="1" stopColor="#F1CE5B" />
         </linearGradient>
         <linearGradient
           id="paint6_linear_1_244"
@@ -158,8 +158,8 @@ const Name = ({ className }: any) => {
           y2="5.90863"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFA761" />
-          <stop offset="1" stop-color="#C45F33" />
+          <stop stopColor="#FFA761" />
+          <stop offset="1" stopColor="#C45F33" />
         </linearGradient>
         <linearGradient
           id="paint7_linear_1_244"
@@ -169,9 +169,9 @@ const Name = ({ className }: any) => {
           y2="54.7111"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF7B00" />
-          <stop offset="0.582272" stop-color="#FFE52E" />
-          <stop offset="1" stop-color="#FFAA00" />
+          <stop stopColor="#FF7B00" />
+          <stop offset="0.582272" stopColor="#FFE52E" />
+          <stop offset="1" stopColor="#FFAA00" />
         </linearGradient>
         <clipPath id="clip0_1_244">
           <rect

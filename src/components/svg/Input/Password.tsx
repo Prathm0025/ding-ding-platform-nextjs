@@ -12,13 +12,13 @@ const Password = ({ className }: any) => {
     >
       <g filter="url(#filter0_f_1_295)">
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M10.882 4.00006H67.0248C67.4533 4.00006 67.8007 4.34743 67.8007 4.77594V6.49068H69.1197V6.00195C69.1197 4.90019 69.9189 4.00793 70.8965 4.00793H71.8508C72.8362 4.00793 73.6276 4.90019 73.6276 6.00195V6.16488L73.6276 11.4874C73.6276 12.5891 72.8285 13.4814 71.8509 13.4814H70.8965C70.2991 13.4814 69.7715 13.1478 69.4534 12.6357L69.4456 12.6357C69.2561 12.3297 69.1351 11.962 69.1211 11.5649H67.8007V14.4822C67.8007 14.9107 67.4533 15.2581 67.0248 15.2581H63.3317V16.9167L63.3394 16.9186V18.4703V65.8534L38.356 61.0042L13.3727 65.8534V17.3219V15.7703V15.2581H10.882C10.4535 15.2581 10.1061 14.9107 10.1061 14.4822V11.5649H8.49884C8.4624 12.6307 7.67797 13.4814 6.7234 13.4814H5.76906C5.17164 13.4814 4.64404 13.1478 4.32593 12.6357H4.31817C4.99586 12.3128 5.61223 11.8685 6.15184 11.3299C5.61407 11.8651 5.00034 12.3066 4.32587 12.628C4.12414 12.3022 4 11.9065 4 11.4797V5.99424C4 4.89249 4.7914 4.00022 5.77677 4.00798H6.7311C7.71647 4.00798 8.50787 4.90025 8.50787 6.002V6.15717C8.50541 6.18303 8.50284 6.20885 8.50017 6.23465V6.49068H10.1061V4.77594C10.1061 4.34744 10.4535 4.00006 10.882 4.00006Z"
           fill="#FFF717"
         />
       </g>
-      <g clip-path="url(#clip0_1_295)">
+      <g clipPath="url(#clip0_1_295)">
         <path
           d="M71.7499 6.49048H8.02673V11.5647H71.7499V6.49048Z"
           fill="#E7995B"
@@ -27,7 +27,7 @@ const Password = ({ className }: any) => {
           d="M38.8023 60.6231L38.7284 60.6088L38.6545 60.6231L14.1329 65.3828V16.1837C20.4088 16.5696 26.83 16.2474 33.2395 15.9258C35.1175 15.8316 36.9944 15.7374 38.8664 15.6611C47.1812 15.3223 55.4167 15.334 63.3238 17.2236V65.3828L38.8023 60.6231Z"
           fill="url(#paint0_linear_1_295)"
           stroke="#EBC356"
-          stroke-width="0.775881"
+          strokeWidth="0.775881"
         />
         <path
           d="M63.704 18.4701V9.63281H13.745V17.3218C30.1782 18.4158 47.6045 14.5209 63.7118 18.4701H63.704Z"
@@ -66,9 +66,9 @@ const Password = ({ className }: any) => {
           width="75.8347"
           height="68.0604"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -88,8 +88,8 @@ const Password = ({ className }: any) => {
           y2="60.3057"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#340000" />
-          <stop offset="1" stop-color="#C00000" />
+          <stop stopColor="#340000" />
+          <stop offset="1" stopColor="#C00000" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_1_295"
@@ -99,8 +99,8 @@ const Password = ({ className }: any) => {
           y2="37.7507"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.415278" stop-color="#770002" />
-          <stop offset="1" stop-color="#F51E21" />
+          <stop offset="0.415278" stopColor="#770002" />
+          <stop offset="1" stopColor="#F51E21" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_1_295"
@@ -110,8 +110,8 @@ const Password = ({ className }: any) => {
           y2="26.5323"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C8080C" />
-          <stop offset="1" stop-color="#820000" />
+          <stop stopColor="#C8080C" />
+          <stop offset="1" stopColor="#820000" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_1_295"
@@ -121,8 +121,8 @@ const Password = ({ className }: any) => {
           y2="8.31394"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#ED9B5A" />
-          <stop offset="1" stop-color="#F1CE5B" />
+          <stop stopColor="#ED9B5A" />
+          <stop offset="1" stopColor="#F1CE5B" />
         </linearGradient>
         <linearGradient
           id="paint4_linear_1_295"
@@ -132,8 +132,8 @@ const Password = ({ className }: any) => {
           y2="15.4442"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFA761" />
-          <stop offset="1" stop-color="#C45F33" />
+          <stop stopColor="#FFA761" />
+          <stop offset="1" stopColor="#C45F33" />
         </linearGradient>
         <linearGradient
           id="paint5_linear_1_295"
@@ -143,8 +143,8 @@ const Password = ({ className }: any) => {
           y2="3.99999"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#ED9B5A" />
-          <stop offset="1" stop-color="#F1CE5B" />
+          <stop stopColor="#ED9B5A" />
+          <stop offset="1" stopColor="#F1CE5B" />
         </linearGradient>
         <linearGradient
           id="paint6_linear_1_295"
@@ -154,8 +154,8 @@ const Password = ({ className }: any) => {
           y2="5.90863"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFA761" />
-          <stop offset="1" stop-color="#C45F33" />
+          <stop stopColor="#FFA761" />
+          <stop offset="1" stopColor="#C45F33" />
         </linearGradient>
         <linearGradient
           id="paint7_linear_1_295"
@@ -165,9 +165,9 @@ const Password = ({ className }: any) => {
           y2="56.0671"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF7B00" />
-          <stop offset="0.582272" stop-color="#FFE52E" />
-          <stop offset="1" stop-color="#FFAA00" />
+          <stop stopColor="#FF7B00" />
+          <stop offset="0.582272" stopColor="#FFE52E" />
+          <stop offset="1" stopColor="#FFAA00" />
         </linearGradient>
         <clipPath id="clip0_1_295">
           <rect

@@ -25,17 +25,17 @@ const Navigation = ({ params }: any) => {
               pathname === item.link
                 ? "bg-gradient-to-bl from-[#E9B43F] via-[#C79017] to-[#A97510]"
                 : ""
-            } rounded-full p-[0.08vw]`}
+            } rounded-full p-0-08vw`}
           >
-            <div className="bg-gradient-to-bl from-[#101010] via-[#141414] to-[#6D2800] rounded-full p-[0.3vw]">
-              <div className="bg-gradient-to-bl from-[#E9B43F] via-[#C79017] to-[#A97510] rounded-full p-[0.2vw]">
-                <div className="bg-gradient-to-bl from-[#101010] via-[#141414] to-[#6D2800] rounded-full p-[0.5vw]">
+            <div className="bg-gradient-to-bl from-[#101010] via-[#141414] to-[#6D2800] rounded-full p-0-3vw">
+              <div className="bg-gradient-to-bl from-[#E9B43F] via-[#C79017] to-[#A97510] rounded-full p-0-2vw">
+                <div className="bg-gradient-to-bl from-[#101010] via-[#141414] to-[#6D2800] rounded-full p-0-5vw">
                   <Image
                     src={item.icon}
                     alt={item.name}
                     height={50}
                     width={50}
-                    className={`h-[3vw] w-[3vw] ${
+                    className={`h-3vw w-3vw ${
                       pathname === item.link ? "animate-bounce" : ""
                     }`}
                   />
@@ -44,7 +44,7 @@ const Navigation = ({ params }: any) => {
             </div>
           </div>
           <p
-            className={`text-[1.2vw] uppercase transition-all duration-1000 ${
+            className={`text-1-2vw uppercase transition-all duration-1000 ${
               pathname === item.link ? "font-[800]" : "font-medium"
             }`}
           >

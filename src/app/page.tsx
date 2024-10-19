@@ -5,9 +5,9 @@ import { fetchGames } from "@/utils/action";
 import Image from "next/image";
 
 const Home = async () => {
-  const initialGames = await fetchGames();
+  const games = await fetchGames();
   return (
-    <main className="relative w-full h-full">
+    <main className="relative w-full h-full flex items-center justify-center flex-col">
       <Image
         src="/home/bg.png"
         fill
@@ -18,7 +18,7 @@ const Home = async () => {
         className="z-[-2] object-cover"
       />
       <Header />
-      <Game />
+      <Game games={games} />
       <Footer />
     </main>
   );
