@@ -1,7 +1,8 @@
 "use client";
 import React, { useEffect, useRef } from "react";
 import GameCard from "./GameCard";
-import GameContainer from "./GameContainer";
+import LeftButton from "./svg/LeftButton";
+import RightButton from "./svg/RightButton";
 
 const Game = ({ games }: any) => {
   const { others, featured } = games;
@@ -23,8 +24,7 @@ const Game = ({ games }: any) => {
     const handleScroll = (event: WheelEvent) => {
       event.preventDefault();
       if (scrollRef.current) {
-        const scrollAmount =
-          scrollRef.current.clientWidth;
+        const scrollAmount = scrollRef.current.clientWidth;
         scrollRef.current.scrollBy({
           left: event.deltaY < 0 ? -scrollAmount : scrollAmount,
           behavior: "smooth",
@@ -45,19 +45,28 @@ const Game = ({ games }: any) => {
   }, []);
 
   return (
-    <div
-      ref={scrollRef}
-      className=" h-[42vh] sm:h-[40vw] overflow-x-auto overflow-y-hidden hideScrollBar w-full flex"
-    >
-      <div className="flex">
-        {gameChunks?.map((item: any, index: any) => (
-          <div
-            key={index}
-            className="flex justify-center items-center w-100vw"
-          >
-            <GameContainer data={item} />
+    <div className="h-[40vh] sm:h-[40vw] overflow-hidden flex w-100vw">
+      <div className="flex justify-evenly items-center w-full relative">
+        <button>
+          <LeftButton />
+        </button>
+        <div ref={scrollRef} className="flex overflow-x-auto w-[90%]">
+          <div className="flex w-auto hideScrollBar">
+            {gameChunks.map((chunk, index) => (
+              <div
+                key={index}
+                className="grid grid-cols-5 place-content-center justify-items-center w-[90vh] sm:w-[90vw]"
+              >
+                {chunk.games.map((game: any, index: number) => (
+                  <GameCard data={game} key={index} />
+                ))}
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
+        <button>
+          <RightButton />
+        </button>
       </div>
     </div>
   );

@@ -81,6 +81,7 @@ const GameFrame = ({ data }: any) => {
           width="100%"
           height="100%"
           id="gameLoader"
+          className="absolute top-0 left-0 z-[100]"
         />
       )}
       <iframe

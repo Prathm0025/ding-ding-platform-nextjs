@@ -224,6 +224,9 @@ body {
 .hideScrollBar {
   scrollbar-width: none !important;
 }
+.hideScrollBar::-webkit-scrollbar {
+  display: none;
+}
 
 .gameCard {
   clip-path: url(#gameshape);
@@ -239,7 +242,6 @@ svg.clippy {
 }
 
 .spin-loader {
-  
   svg {
     width: 6vw;
     transform-origin: center;

@@ -5,7 +5,7 @@ import GameBorder from "./svg/GameBorder";
 
 const GameCard = ({ data }: any) => {
   return (
-    <div className="sm:w-[18vw] w-[18vh] h-[59vh] sm:h-[59vw] relative flex items-center justify-center translateZ ">
+    <div className="sm:w-[18vw] w-[18vh] h-[59vh] sm:h-[59vw] relative flex items-center justify-center">
       <GameBorder />
       <Link
         href={`/game/${data?.slug}`}
