@@ -1,0 +1,3 @@
+interface DecodedToken {
+  role: string;
+}
