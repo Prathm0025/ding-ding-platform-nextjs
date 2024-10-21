@@ -6,7 +6,11 @@ const Game = ({ games }: any) => {
   const { others, featured } = games;
   const scrollRef = useRef<HTMLDivElement | null>(null);
 
-  const displayedGames = [...featured, ...others];
+  console.log("GA,es", games);
+  const displayedGames = [
+    ...(featured?.length > 0 ? featured : []),
+    ...(others?.length > 0 ? others : []),
+  ];
 
   useEffect(() => {
     const handleScroll = (event: WheelEvent) => {

@@ -85,7 +85,10 @@ const page = () => {
               placeholder="Enter Password"
               icon={<Password className="h-[85%] w-[85%]" />}
             />
-            <button type="submit" className="mt-2vw w-[30%] md:w-[50%] min-w-fit z-[100]">
+            <button
+              type="submit"
+              className="mt-2vw w-[30%] md:w-[50%] min-w-fit z-[100]"
+            >
               <Button className="uppercase" text="Login" />
             </button>
           </form>
@@ -97,6 +100,7 @@ const page = () => {
             quality={100}
             width={800}
             height={1000}
+            sizes={"100%"}
             priority
           />
         </div>

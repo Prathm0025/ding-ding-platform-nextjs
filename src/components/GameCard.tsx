@@ -17,6 +17,7 @@ const GameCard = ({ data }: any) => {
           fill
           quality={100}
           priority
+          sizes={"100%"}
           className="rounded-[4vw] shadow-2xl gameCard"
         />
       </div>

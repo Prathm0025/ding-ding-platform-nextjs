@@ -11,6 +11,7 @@ const Home = async () => {
       <Image
         src="/home/bg.png"
         fill
+        sizes={"100%"}
         alt="bg"
         priority={true}
         quality={100}

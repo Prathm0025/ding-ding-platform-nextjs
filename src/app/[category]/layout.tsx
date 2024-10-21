@@ -13,6 +13,7 @@ export default function RootLayout({
         src="/home/bg.png"
         fill
         alt="bg"
+        sizes={"100%"}
         priority={true}
         quality={100}
         objectPosition="center"
