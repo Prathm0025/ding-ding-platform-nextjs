@@ -5,23 +5,23 @@ import GameBorder from "./svg/GameBorder";
 
 const GameCard = ({ data }: any) => {
   return (
-    <Link
-      href={`/game/${data.slug}`}
-      className="sm:w-[18vw] w-[18vh] h-[59vh] sm:h-[59vw] relative flex items-center justify-center translateZ "
-    >
+    <div className="sm:w-[18vw] w-[18vh] h-[59vh] sm:h-[59vw] relative flex items-center justify-center translateZ ">
       <GameBorder />
-      <div className="absolute top-auto left-auto w-[87%] h-[46%]  rounded-rectangle">
+      <Link
+        href={`/game/${data?.slug}`}
+        className="absolute top-auto left-auto w-[87%] h-[46%]  rounded-rectangle"
+      >
         <Image
-          alt={data.name}
-          src={data.thumbnail}
+          alt={data?.name}
+          src={data?.thumbnail}
           fill
           quality={100}
           priority
           sizes={"100%"}
           className="rounded-[4vw] shadow-2xl gameCard"
         />
-      </div>
-    </Link>
+      </Link>
+    </div>
   );
 };
 

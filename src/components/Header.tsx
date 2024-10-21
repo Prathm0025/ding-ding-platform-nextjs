@@ -4,9 +4,13 @@ import UserData from "./UserData";
 import { getUserDetails } from "@/utils/action";
 import Password from "./svg/Password";
 import Settings from "./svg/Settings";
+import { redirect } from "next/navigation";
 
 const Header = async () => {
   const user = await getUserDetails();
+  if (user.status === "inactive") {
+    redirect("/logout");
+  }
   return (
     <div className="w-full bg-gradient-to-b from-[#A97510] via-[#F0E88C] to-[#E9B43F] pb-0-18vw z-[100] relative">
       <div className="w-full bg-gradient-to-b from-[#A97510] to-[#C79017] pb-0-15vw">

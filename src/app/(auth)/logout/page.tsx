@@ -1,4 +1,5 @@
 import { cookies } from "next/headers";
+import DeleteUser from "@/components/DeleteUser";
 import { redirect } from "next/navigation";
 
 const Logout = async () => {
@@ -7,7 +8,7 @@ const Logout = async () => {
     cookies().delete("token");
     redirect("/login");
   }
-  return <></>;
+  return <DeleteUser deleteToken={deleteToken} />;
 };
 
 export default Logout;

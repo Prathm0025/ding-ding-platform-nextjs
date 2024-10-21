@@ -78,3 +78,23 @@ export async function fetchGames(category: string = "all") {
     redirect("/logout");
   }
 }
+
+export const getGameBySlug = async (slug: string) => {
+  const token = await getCookie();
+
+  try {
+    const response = await fetch(`${config.server}/api/games/${slug}`, {
+      method: "GET",
+      credentials: "include",
+      headers: {
+        "Content-Type": "application/json",
+        Cookie: `userToken=${token}`,
+      },
+    });
+    const data = await response.json();
+    return data;
+  } catch (error: unknown) {
+    console.error(error);
+    redirect("/");
+  }
+};
