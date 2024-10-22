@@ -28,18 +28,11 @@ jobs:
             sudo -i
 
             # Check if the repository exists, if not clone the dev branch directly
-            if [ ! -d "/root/ding-ding-platform-nextjs" ]; then
-              echo "Repository not found, cloning dev branch..."
-              git clone -b dev git@github.com:Prathm0025/ding-ding-platform-nextjs.git
-            else
-              echo "Repository found, pulling latest changes from dev branch..."
-              cd /root/ding-ding-platform-nextjs
-              git checkout dev
-              git pull origin dev
-            fi
-
-            # Navigate to the project directory
+            git clone -b dev git@github.com:Prathm0025/ding-ding-platform-nextjs.git
+            
             cd /root/ding-ding-platform-nextjs
+            git checkout dev
+            git pull origin dev
 
             # Build the new Docker image without stopping the running containers
             docker-compose build
