@@ -48,6 +48,6 @@ jobs:
             docker-compose down
             docker-compose up -d
 
-            # Optional: Clean up unused Docker images and containers
+            # Clean up unused Docker images and containers
             docker image prune -f
           EOF
